@@ -1,0 +1,36 @@
+case study laurens report
+	Else getting values from running code
+
+Signal described with difference between signal results for short vs long alg
+
+Planning:
+	~4 months of time
+	Software Engineering: 
+		Report on coverage of test suite: need to report on increased confidence
+		Specifically include bug reported in Laurens' thesis
+	Ask Guillermo & Ritam for help in fixing the algorithm
+	Extend either case study or algorithmic:
+		
+		
+	Original plan:
+		Use monitor, get data to train NN to approximate monitor
+			== feasibility study
+		Pick some openAI examples, run robustness algorithm, then train net on this
+	
+	NN for each logical formula?
+	recursive neural net makes more sense, probably
+	
+	Advantage neural net:
+		Sometimes timesteps can't be computed for timestep X, because lookahead required
+		NN estimates 
+		
+	Cartpole environment + add a few more?
+		mountaincar, pendulum ... Many others - see openAI
+	
+	Complex formula --> probably worse performance
+	
+	Recurrent neural network (convolution required?)
+		Probably easier to do safety (i.e. never go outside these bounds) vs achievability (i.e. at some point,x is achieved)
+		
+Learning around late feb
+

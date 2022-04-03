@@ -1,0 +1,7 @@
+
+
+Re-write refactor text
+Intro references
+Add text about the algorithm
+	Perhaps compare to version from the paper?
+		--> Paper version may also be correct, have to confirm this.
