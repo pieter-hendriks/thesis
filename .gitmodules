@@ -6,4 +6,4 @@
 	url = git@github.com:pieter-hendriks/STL-monitoring.git
 [submodule "openAI/agents"]
 	path = openAI/agents
-	url = https://github.com/p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch
+	url = git@github.com:pieter-hendriks/Deep-Reinforcement-Learning-Algorithms-with-PyTorch.git
