@@ -6,7 +6,7 @@
 [submodule "stlTool"]
 	path = stlTool
 	url = git@github.com:pieter-hendriks/STL-monitoring.git
-	branch = master
+	branch = main 
 	update = rebase
 [submodule "openAI/agents"]
 	path = openAI/agents
