@@ -1,9 +1,15 @@
 [submodule "stl2"]
 	path = stl2
 	url = https://github.com/LaurensVanDamme/STL-monitoring
+	branch = master
+	update = rebase
 [submodule "stlTool"]
 	path = stlTool
 	url = git@github.com:pieter-hendriks/STL-monitoring.git
+	branch = master
+	update = rebase
 [submodule "openAI/agents"]
 	path = openAI/agents
 	url = git@github.com:pieter-hendriks/Deep-Reinforcement-Learning-Algorithms-with-PyTorch.git
+	branch = master
+	update = rebase
