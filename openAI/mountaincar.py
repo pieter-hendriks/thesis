@@ -3,12 +3,12 @@ import gym
 import numpy as np
 import os
 import gym
-
+import sys
 from agents import PPO, DDPG, SAC, TD3, Trainer, Config
-
+import random
 
 config = Config()
-config.seed = 1
+config.seed = random.randint(0, sys.maxsize)
 config.environment = gym.make("MountainCarContinuous-v0")
 config.num_episodes_to_run = 150
 config.file_to_save_data_results = None
