@@ -1,0 +1,22 @@
+
+Next steps in implementation:
+x	Signal comparison function (to improve tests & allow verification that syntax and efficient algorithms compute the same results)
+x		Verify that they do; fix if they don't
+	Add experiment training agent on robustness
+		Both using efficient algorithm and later using the neural net estimates? (compare performances)
+	Implement robustness monitor neural net
+Document steps:
+	Chapter 3
+		Situation pre- and post-refactor comparison (LoC, class diagram, test cases, coverage, ...)
+		Add class diagrams (+ other figures)
+	Define monitoring (referenced)
+	Add related works
+		Monitoring
+		STL/Robustness
+		Training agent on robustness
+	Extend introduction
+	Comparison of robustness monitor neural net & efficient algorithm performance & results  (once neural net implemented)
+	Fix STL definition (functions missing, only until operator in list, ...)
+	
+	
+And I'd promised Ritam a comparison of performances for Until with some large time intervals ([0, 200] was mentioned).
