@@ -1,10 +1,7 @@
-import torch
-import gym
-import numpy as np
-import os
+""" Mountain car learning """
 import gym
 
-from agents import PPO, DDPG, SAC, TD3, Trainer, Config
+from .agents import PPO, DDPG, SAC, TD3, Trainer, Config
 
 
 config = Config()
@@ -95,6 +92,8 @@ class RobustnessTrainer(MyTrainer):
 
 
 if __name__ == "__main__":
+    allAgents = [PPO, DDPG, TD3]
+    allAgents += SAC
     AGENTS = [SAC] # [SAC]
     trainer = Trainer(config, AGENTS)
     trainer.run_games_for_agents()
