@@ -1,57 +1,9 @@
+# pylint: disable-all
 import gym
 import torch
 import numpy as np
 import os
 prefix = 'stlTool/openAI/cartpole'
-# from agents import DQN, Config, Trainer
-
-
-
-
-# config = Config()
-# config.environment = gym.make('CartPole-v1')
-# config.num_episodes_to_run = 900
-# config.visualise_overall_agent_results = False
-# config.visualise_overall_results = False
-# config.runs_per_agent = 1
-# config.standard_deviation_results = 1.0
-# config.use_GPU = False
-# config.randomise_random_seed = True
-# config.save_model = False
-# config.hyperparameters = {
-# 	"DQN_Agents": {
-# 		"learning_rate": 0.01,
-# 		"batch_size": 256,
-# 		"buffer_size": 40000,
-# 		"epsilon": 1.0,
-# 		"epsilon_decay_rate_denominator": 1,
-# 		"discount_rate": 0.99,
-# 		"tau": 0.01,
-# 		"alpha_prioritised_replay": 0.6,
-# 		"beta_prioritised_replay": 0.1,
-# 		"incremental_td_error": 1e-8,
-# 		"update_every_n_steps": 1,
-# 		"linear_hidden_units": [30, 15],
-# 		"final_layer_activation": "None",
-# 		"batch_norm": False,
-# 		"gradient_clipping_norm": 0.7,
-# 		"learning_iterations": 1,
-# 		"clip_rewards": False
-# 	}
-# }
-
-# agents = [DQN]
-# trainer = Trainer(config, agents)
-
-# import cProfile
-# cProfile.run('trainer.run_games_for_agents()', 'myout')
-
-# import pstats as ps
-
-# p = ps.Stats('myout')
-# p.sort_stats('tottime').print_stats(15)
-# #trainer.run_games_for_agents()
-
 
 gamma = 0.95
 trainEpisodeCount = 750
@@ -62,7 +14,6 @@ saveTrainFile = f'{prefix}/data.py'
 
 
 class MyNetwork(torch.nn.Module):
-
 	def __init__(self):
 		super().__init__()
 		self.model = torch.nn.Sequential(
