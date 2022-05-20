@@ -1,11 +1,11 @@
 Thesis:
 	Document:
 		Introduction:
-			☐ Add related works re:monitoring (run-time verification)
-			☐ Add related works re:STL/robustness
-			☐ Add related works re:Agent training
-			☐ Read through intro and verify that the story makes sense
-			☐ Have someone else read & fix comments
+			✔ Add related works re:monitoring (run-time verification) @done (20/5/2022, 16:06:09)
+			✔ Add related works re:STL/robustness @done (20/5/2022, 16:06:10)
+			✘ Add related works re:Agent training @cancelled (20/5/2022, 16:06:10)
+			✔ Read through intro and verify that the story makes sense @done (20/5/2022, 16:06:13)
+			✘ Have someone else read & fix comments @cancelled (20/5/2022, 16:06:14)
 			☐ Have prof read intro & fix comments
 		Overall:
 			☐ Performance analysis neural net vs algorithm
@@ -40,6 +40,11 @@ Thesis:
 			✔ Extract common base of class, to allow easy mountaincar impl @done (5/16/2022, 12:04:45 PM)
 			✔ Find some set of parameters that seems to work with cartpole @done (5/16/2022, 1:06:41 PM)
 			✘ Generate a larger set of training data? @cancelled (5/16/2022, 12:04:50 PM)
+			✔ Switch C and P signals in cartpole CNN training data: C = index 0, p = index 2 @done (20/5/2022, 16:07:17)
+			☐ Train CNN on the new data set
+			☐ Test CNN after new data set
+				☐ Check how often the sign changes (magnitude being off doesn't matter as much - sign being wrong is important)
+				☐ Maybe change formula (e.g. 1.2 margin instead of 2.4 - can argue as safety margin or something)
 		Mountaincar CNN:
 			☐ Generate (large) mountaincar data for use with CNN learning
 			☐ Mountain car learning
@@ -51,4 +56,4 @@ Thesis:
 
 	Generic:
 		☐ Check cartpoleEstimator timestamp equality requirement
-		
+
