@@ -3,10 +3,11 @@ import gym
 import torch
 import numpy as np
 import os
-prefix = 'stlTool/openAI/cartpole'
+prefix = 'stlTool/examples/cartpole'
 
-gamma = 0.95
-trainEpisodeCount = 750
+learnrate = 5e-3
+gamma = 0.98
+trainEpisodeCount = 1000
 testEpisodeCount = 10
 stepCount = 10000
 modelSaveName = f'{prefix}/model.pickle'
@@ -17,10 +18,8 @@ class MyNetwork(torch.nn.Module):
 	def __init__(self):
 		super().__init__()
 		self.model = torch.nn.Sequential(
-		    torch.nn.Linear(4, 16), torch.nn.ReLU(), torch.nn.Linear(16, 2)
+		    torch.nn.Linear(4, 32), torch.nn.ReLU(), torch.nn.Linear(32, 2)
 		)
-		for param in self.model.parameters():
-			print(param.data)
 
 	def forward(self, x):
 		x = self.model(x)
@@ -33,7 +32,7 @@ obsSpace = env.observation_space
 actSpace = env.action_space
 
 model = MyNetwork()
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-2)
+optimizer = torch.optim.Adam(model.parameters(), lr=learnrate)
 eps = np.finfo(np.float32).eps.item()
 
 

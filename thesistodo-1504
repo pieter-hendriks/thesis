@@ -5,6 +5,7 @@ x		Verify that they do; fix if they don't
 	Add experiment training agent on robustness
 		Both using efficient algorithm and later using the neural net estimates? (compare performances)
 	Implement robustness monitor neural net
+	Extend testing to improve coverage etc
 Document steps:
 	Chapter 3
 		Situation pre- and post-refactor comparison (LoC, class diagram, test cases, coverage, ...)
@@ -19,4 +20,4 @@ Document steps:
 	Fix STL definition (functions missing, only until operator in list, ...)
 	
 	
-And I'd promised Ritam a comparison of performances for Until with some large time intervals ([0, 200] was mentioned).
+x And I'd promised Ritam a comparison of performances for Until with some large time intervals ([0, 200] was mentioned).

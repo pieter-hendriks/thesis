@@ -1,0 +1,54 @@
+Thesis:
+	Document:
+		Introduction:
+			☐ Add related works re:monitoring (run-time verification)
+			☐ Add related works re:STL/robustness
+			☐ Add related works re:Agent training
+			☐ Read through intro and verify that the story makes sense
+			☐ Have someone else read & fix comments
+			☐ Have prof read intro & fix comments
+		Overall:
+			☐ Performance analysis neural net vs algorithm
+			☐ Answer the question: "Why neural net over on-line version of algorithm"
+			☐ Generate figures detailing implementation
+			☐ Add statistics & figures to refactor/functional changes chapters
+				☐ Lines of code
+				☐ Class diagram
+				☐ Test case count
+				☐ Test coverage
+			☐ CNN implementation chapters
+			☐ More details in OpenAI chapters (re: agent design for example)
+
+	Implementatie:
+		✔ Move syntax algorithm into stl.operations @done (5/19/2022, 3:18:03 PM)
+		✔ Move boolean validations into stl.operations? @done (5/19/2022, 3:26:10 PM)
+		✔ Fix current tests @done (5/19/2022, 1:31:17 PM)
+		✘ Fix timed eventually: do shift + get unique timestamps, base window on that list @cancelled (5/19/2022, 1:49:54 PM)
+					Unnecessary -> given some <t, v> max, after it disappears, we don't suddenly put the new max at time t. Instead, the new max should appear at the time of the next checkpoint so there's a smooth line
+		✔ Timed always update filter to reflect correct implementation (see timeduntil) @done (5/19/2022, 2:51:04 PM)
+		✔ Timed eventually add timestamp filter @done (5/19/2022, 2:51:04 PM)
+		✘ Data normalization for mountaincar & cartpole -> necessity? @cancelled (5/19/2022, 3:26:23 PM)
+		✔ Adapt efficient algs: create set of expected timestamps and remove all unnecessary ones @done (5/19/2022, 2:26:37 PM)
+		✔ Basic CNN architecture for cartpole learning @done (5/16/2022, 12:45:30 PM)
+		CartPole CNN:
+			✔ Implement Cartpole CNN Class @done (5/15/2022, 1:09:27 PM)
+			✔ Implement Cartpole CNN train function @done (5/15/2022, 5:49:33 PM)
+			✔ Implement Cartpole CNN test function @done (5/15/2022, 5:49:33 PM)
+			✔ Implement robustness estimator base class @done (5/15/2022, 6:10:13 PM)
+			✔ Implement pre-process function for train data to (CUDA) tensors @done (5/16/2022, 11:06:40 AM)
+			✔ Extract similar test/train features into separate function @done (5/16/2022, 12:04:44 PM)
+			✔ Extract common base of class, to allow easy mountaincar impl @done (5/16/2022, 12:04:45 PM)
+			✔ Find some set of parameters that seems to work with cartpole @done (5/16/2022, 1:06:41 PM)
+			✘ Generate a larger set of training data? @cancelled (5/16/2022, 12:04:50 PM)
+		Mountaincar CNN:
+			☐ Generate (large) mountaincar data for use with CNN learning
+			☐ Mountain car learning
+		Testing:
+			☐ Restructure tests (mirror stl module, rather than tree node)
+			☐ Extend test suite (ensure high coverage etc)
+		Robustness training:
+			☐ Agent train on robustness
+
+	Generic:
+		☐ Check cartpoleEstimator timestamp equality requirement
+		
