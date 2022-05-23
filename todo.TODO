@@ -25,6 +25,7 @@ Thesis:
 		✔ Fix current tests @done (5/19/2022, 1:31:17 PM)
 		✘ Fix timed eventually: do shift + get unique timestamps, base window on that list @cancelled (5/19/2022, 1:49:54 PM)
 					Unnecessary -> given some <t, v> max, after it disappears, we don't suddenly put the new max at time t. Instead, the new max should appear at the time of the next checkpoint so there's a smooth line
+		✔ Undo syntax algorithm timestamp choosing - should only be same as efficient, not all in shifted @done (5/23/2022, 11:52:01 AM)
 		✔ Timed always update filter to reflect correct implementation (see timeduntil) @done (5/19/2022, 2:51:04 PM)
 		✔ Timed eventually add timestamp filter @done (5/19/2022, 2:51:04 PM)
 		✘ Data normalization for mountaincar & cartpole -> necessity? @cancelled (5/19/2022, 3:26:23 PM)
