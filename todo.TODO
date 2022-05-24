@@ -50,7 +50,21 @@ Thesis:
 			☐ Generate (large) mountaincar data for use with CNN learning
 			☐ Mountain car learning
 		Testing:
-			☐ Restructure tests (mirror stl module, rather than tree node)
+			✔ Restructure tests (mirror stl module, rather than tree node) @done (5/24/2022, 1:24:37 PM)
+				✔ Remove untiltestbase if unnecessary @done (5/23/2022, 2:33:07 PM)
+				✔ Convert timed until test cases @done (5/23/2022, 2:33:08 PM)
+				✔ Convert untimed until test cases @done (5/23/2022, 3:29:22 PM)
+				✔ Convert timed eventually test cases @done (5/24/2022, 12:13:29 PM)
+				✔ convert untimed eventually test cases @done (5/24/2022, 12:17:17 PM)
+				✔ convert timed always test cases @done (5/24/2022, 12:17:22 PM)
+				✔ convert untimed always test cases @done (5/24/2022, 1:15:50 PM)
+				✘ convert binary comparison test cases @cancelled (5/24/2022, 1:24:00 PM)
+				✘ convert binary operation test cases @cancelled (5/24/2022, 1:24:01 PM)
+				✔ Implement And test @done (5/23/2022, 3:29:16 PM)
+				✔ implement Or test @done (5/23/2022, 3:33:30 PM)
+				✔ implement Abs test @done (5/23/2022, 3:29:16 PM)
+				✔ implement Not test @done (5/23/2022, 3:35:12 PM)
+			✔ Fix broken tests after moving @done (5/24/2022, 4:03:02 PM)
 			☐ Extend test suite (ensure high coverage etc)
 		Robustness training:
 			☐ Agent train on robustness
