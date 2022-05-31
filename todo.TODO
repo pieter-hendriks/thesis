@@ -9,15 +9,15 @@ Thesis:
 			☐ Have prof read intro & fix comments
 		Overall:
 			☐ Performance analysis neural net vs algorithm
-			☐ Answer the question: "Why neural net over on-line version of algorithm"
-			☐ Generate figures detailing implementation
-			☐ Add statistics & figures to refactor/functional changes chapters
-				☐ Lines of code
-				☐ Class diagram
-				☐ Test case count
-				☐ Test coverage
+			✔ Answer the question: "Why neural net over on-line version of algorithm" @done (5/31/2022, 9:35:21 PM)
+			✔ Generate figures detailing implementation @done (5/31/2022, 9:35:18 PM)
+			✔ Add statistics & figures to refactor/functional changes chapters @done (5/31/2022, 9:35:11 PM)
+				✘ Lines of code @cancelled (5/31/2022, 9:35:15 PM)
+				✔ Class diagram @done (5/31/2022, 9:35:15 PM)
+				✔ Test case count @done (5/31/2022, 9:35:16 PM)
+				✔ Test coverage @done (5/31/2022, 9:35:16 PM)
 			☐ CNN implementation chapters
-			☐ More details in OpenAI chapters (re: agent design for example)
+			✔ More details in OpenAI chapters (re: agent design for example) @done (5/31/2022, 9:35:24 PM)
 
 	Implementatie:
 		✔ Move syntax algorithm into stl.operations @done (5/19/2022, 3:18:03 PM)
@@ -65,10 +65,10 @@ Thesis:
 				✔ implement Abs test @done (5/23/2022, 3:29:16 PM)
 				✔ implement Not test @done (5/23/2022, 3:35:12 PM)
 			✔ Fix broken tests after moving @done (5/24/2022, 4:03:02 PM)
-			☐ Extend test suite (ensure high coverage etc)
+			✔ Extend test suite (ensure high coverage etc) @done (5/27/2022, 10:17:13 AM)
 		Robustness training:
-			☐ Agent train on robustness
+			✘ Agent train on robustness @cancelled (5/27/2022, 12:57:28 PM)
 
 	Generic:
-		☐ Check cartpoleEstimator timestamp equality requirement
+		✔ Check cartpoleEstimator timestamp equality requirement @done (5/27/2022, 12:44:32 PM)
 
