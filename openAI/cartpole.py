@@ -6,7 +6,6 @@ import os
 prefix = 'stlTool/examples/cartpole'
 
 learnrate = 5e-3
-gamma = 0.98
 trainEpisodeCount = 1000
 testEpisodeCount = 10
 stepCount = 10000

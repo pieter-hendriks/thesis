@@ -87,14 +87,6 @@ config.hyperparameters = {
 }
 
 
-class MyTrainer(Trainer):
-	...
-
-	
-class RobustnessTrainer(MyTrainer):
-	...
-
-
 if __name__ == "__main__":
     allAgents = [PPO, DDPG, TD3]
     allAgents += SAC
