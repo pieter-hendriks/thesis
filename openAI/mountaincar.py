@@ -5,13 +5,12 @@ import sys
 import random
 
 
-from .agents import PPO, DDPG, SAC, TD3, Trainer, Config
+from agents import PPO, DDPG, SAC, TD3, Trainer, Config
 
 
 config = Config()
-config.seed = random.randint(0, sys.maxsize)
 config.environment = gym.make("MountainCarContinuous-v0")
-config.num_episodes_to_run = 150
+config.num_episodes_to_run = 1000
 config.file_to_save_data_results = None
 config.file_to_save_results_graph = None
 config.show_solution_score = False
@@ -88,9 +87,8 @@ config.hyperparameters = {
 
 
 if __name__ == "__main__":
-    allAgents = [PPO, DDPG, TD3]
-    allAgents += SAC
-    AGENTS = [SAC] # [SAC]
+    allAgents = [PPO, DDPG, TD3, SAC]
+    AGENTS = [SAC]
     trainer = Trainer(config, AGENTS)
     trainer.run_games_for_agents()
 

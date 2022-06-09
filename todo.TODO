@@ -1,23 +1,30 @@
 Thesis:
 	Document:
-		Introduction:
-			✔ Add related works re:monitoring (run-time verification) @done (20/5/2022, 16:06:09)
-			✔ Add related works re:STL/robustness @done (20/5/2022, 16:06:10)
-			✘ Add related works re:Agent training @cancelled (20/5/2022, 16:06:10)
-			✔ Read through intro and verify that the story makes sense @done (20/5/2022, 16:06:13)
-			✘ Have someone else read & fix comments @cancelled (20/5/2022, 16:06:14)
-			☐ Have prof read intro & fix comments
-		Overall:
-			☐ Performance analysis neural net vs algorithm
-			✔ Answer the question: "Why neural net over on-line version of algorithm" @done (5/31/2022, 9:35:21 PM)
-			✔ Generate figures detailing implementation @done (5/31/2022, 9:35:18 PM)
-			✔ Add statistics & figures to refactor/functional changes chapters @done (5/31/2022, 9:35:11 PM)
-				✘ Lines of code @cancelled (5/31/2022, 9:35:15 PM)
-				✔ Class diagram @done (5/31/2022, 9:35:15 PM)
-				✔ Test case count @done (5/31/2022, 9:35:16 PM)
-				✔ Test coverage @done (5/31/2022, 9:35:16 PM)
-			☐ CNN implementation chapters
-			✔ More details in OpenAI chapters (re: agent design for example) @done (5/31/2022, 9:35:24 PM)
+		☐ Performance analysis neural net vs algorithm
+		☐ CNN implementation chapters
+		☐ Conclusion
+		☐ Abstract
+
+		☐ Type hinting section; type mis-match errors?
+			--> State that we found the boolean time list intersection thing
+			--> Based on list indexing, parameters seemed to be signals, but were in fact lists of time intervals
+		☐ Ensure thesis document is in the repository
+			☐ Perhaps refer to both repositories in thesis
+		☐ Update Readme.MD to reflect my changes
+		☐ Add performance stats
+			☐ Some generated signal; record time (and memory) needed for src syntax and updated syntax. I assume there's a package for this
+			☐ Also compare to efficient algorithm
+			☐ And then to neural net
+
+		☐ Unnecessary suffix example in stl functional changes (visual, I assume)
+		☐ Comparison operator example (visual, I assume)
+
+		☐ Add timed eventually as a main contribution in introduction
+			(I assume that's what the highlighting refers to, rather than the fact that we don't cover pre-processing in typeset algorithm)
+
+		☐ Timed Eventually example (visual)
+
+
 
 	Implementatie:
 		✔ Move syntax algorithm into stl.operations @done (5/19/2022, 3:18:03 PM)
