@@ -18,7 +18,7 @@ plt.plot(oldSynTimes, [x / (1024 ** 2) for x in oldSyn[1:]], color='blue', label
 plt.plot(newSynTimes, [x / (1024 ** 2) for x in newSyn[1:]], color='red', label="Syntax Algorithm updated implementation")
 plt.plot(newEffTimes, [x / (1024 ** 2) for x in newEff[1:]], color='black', label="Efficient Algorithm updated implementation")
 plt.xlabel("Time (s)")
-plt.ylabel("Memory (MB)")
+plt.ylabel("Memory (MiB)")
 plt.legend()
 plt.title("Memory use compared between implementations")
 plt.show()
